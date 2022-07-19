@@ -10,7 +10,7 @@ Returns an object of type QueryParams populated with the values read from urlSea
 Returns a urlSearch shaped string created from queryParams.
 
 ## Usage:
-You can simply import if using jsdelivery:
+You can simply import it from github:
 ```ts
-import { decodeQueryParams, encodeQueryParams} from "https://cdn.jsdelivr.net/gh/kerezsiz42/qs/qs.ts"
+import { decodeQueryParams, encodeQueryParams } from "https://raw.githubusercontent.com/kerezsiz42/qs/master/index.ts"
 ```
