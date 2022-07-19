@@ -8,3 +8,9 @@ export type QueryParams = { [k: string]: string | string[] };
 Returns an object of type QueryParams populated with the values read from urlSearch.
 ### encodeQueryParams(queryParams: QueryParams)
 Returns a urlSearch shaped string created from queryParams.
+
+## Usage:
+You can simply import if using jsdelivery:
+```ts
+import { decodeQueryParams, encodeQueryParams} from "https://cdn.jsdelivr.net/gh/kerezsiz42/qs/qs.ts"
+```

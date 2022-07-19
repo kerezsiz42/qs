@@ -1,5 +1,5 @@
 import { assertEquals } from "https://deno.land/std@0.148.0/testing/asserts.ts";
-import { decodeQueryParams, encodeQueryParams } from "./qs.ts";
+import { decodeQueryParams, encodeQueryParams } from "./index.ts";
 
 const urlSearch = "?a=123&b[]=sdfs&b[]=asd&c=&d=456";
 const parsedUrlSearch = {
