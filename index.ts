@@ -7,7 +7,12 @@ export const decodeQueryParams = (urlSearch: string): QueryParams => {
     const isArrayMember = /^\w+\[\]$/.test(key);
     if (isArrayMember) {
       const nk = key.slice(0, -2);
-      acc[nk] = !acc[nk] ? [value] : [...acc[nk], value];
+      if (acc[nk]) {
+        const x = <Array<string>> acc[nk];
+        x.push(value);
+      } else {
+        acc[nk] = [value];
+      }
     } else {
       acc[key] = value;
     }
